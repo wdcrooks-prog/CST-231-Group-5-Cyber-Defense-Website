@@ -1,0 +1,126 @@
+ /*  
+Author: Jada Morrison, Jordan Banks, Dawn Graves, William Crooks
+File Name: styles.css
+Date: 10/30/2025
+*/
+
+/* CSS Reset */
+body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images */
+body {
+    background-color: #e7e6e4;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    
+}
+
+.tab-desk {
+   
+}
+
+/* Style rules for header area */
+.mobile h1, .mobile h3 {
+  
+}
+
+.mobile h1 { 
+    
+}
+
+
+
+/* Style rules for navigation area */
+nav {
+     background-color: #002D74;
+
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+
+}
+
+nav li {
+    background-color: #FDB827
+   
+}
+
+nav li a {
+  
+}
+
+/* Style rules for main content */
+main {
+   background-color: #a5a8ac;
+   padding: 2%;
+   font-family: "Lora", serif;
+   font-style: normal;
+}
+
+
+main p {
+    font-size: 1.25em;
+}
+
+
+
+
+/*Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 1em;
+    background-color: #2a1f14;
+    color: #FDB827;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print {
+
+
+}
+
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print {
+    /*Desktop Viewport: Show desktop class, hide mobile-tablet class.*/
+
+
+    /* Desktop Viewport: Style rules for main content */
+
+
+}
+
+
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px), print {
+
+}
+
+/* Media Query for Print */
+@media print {
+
+}
