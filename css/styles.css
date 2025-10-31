@@ -16,8 +16,10 @@ body {
     background-color: #e7e6e4;
 }
 
+
+
 img {
-    max-width: 100%;
+    max-width: auto;
     display: block;
 }
 
@@ -51,12 +53,16 @@ nav {
 
 nav ul {
     list-style-type: none;
-    text-align: left;
+    text-align: center;
 
 }
 
 nav li {
     background-color: #FDB827
+    display: block; 
+    font-size: 1.5em;
+    font-family: Merriweather, sans-serif;
+    font-weight: bold;
    
 }
 
