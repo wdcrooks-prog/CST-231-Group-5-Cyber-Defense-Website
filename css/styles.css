@@ -19,8 +19,8 @@ body {
 
 
 img {
-    max-width: auto;
-    display: block;
+    max-width: 100%;
+    display:inline-block
 }
 
 /* Style rules for mobile viewport */
