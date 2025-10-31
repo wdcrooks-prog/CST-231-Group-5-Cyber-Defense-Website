@@ -14,6 +14,7 @@ body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption {
 /*Style rules for body and images */
 body {
     background-color: #e7e6e4;
+    text-align: center;
 }
 
 
