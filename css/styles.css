@@ -5,7 +5,7 @@ Date: 10/30/2025
 */
 
 /* CSS Reset */
-body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption {
+body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption, div, section, a {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,35 +15,42 @@ body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption {
 body {
     background-color: #e7e6e4;
     text-align: center;
+    font-family: 'Lora', serif;
+    color: #000;
 }
 
+#wrapper {
+    max-width: 100%; 
+    margin: 0 auto;
+}
 
 
 img {
     max-width: 100%;
-    display:inline-block
+    display: block
+    height: auto
 }
 
 /* Style rules for mobile viewport */
 
 /* Style rules to show mobile class and hide tab-desk class */
 .mobile {
-    
+    display: block;
 }
 
 .tab-desk {
-   
+    display: none;
 }
 
 /* Style rules for header area */
 .mobile h1, .mobile h3 {
-  
+    ont-size: 1.5em;
+    font-family: 'Merriweather', sans-serif;
 }
 
-.mobile h1 { 
-    
+nav {
+    background-color: #002D74;
 }
-
 
 
 /* Style rules for navigation area */
@@ -64,19 +71,26 @@ nav li {
     font-size: 1.5em;
     font-family: Merriweather, sans-serif;
     font-weight: bold;
+    margin-bottom: 2px;
    
 }
 
 nav li a {
-  
+   display: block;
+   padding: 10px 0;
+   text-decoration: none;
+   color: #002D74;
 }
 
 /* Style rules for main content */
 main {
-   background-color: #a5a8ac;
+   background-color: #FDB827;
+   color: #002D74;
    padding: 2%;
-   font-family: "Lora", serif;
+   margin-bottom: 10px;
+   font-family: 'Merriweather', sans-serif;
    font-style: normal;
+   text-align: left;
 }
 
 
@@ -84,6 +98,13 @@ main p {
     font-size: 1.25em;
 }
 
+.focus-article, .article-card, .cve-item {
+    background-color: #d8d8d8; /* Light gray box color */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    text-align: left;
+}
 
 
 
@@ -100,34 +121,93 @@ footer {
 }
 
 footer a {
-    color: #f3e6d8;
+    color: #FDB827;
     text-decoration: none;
+}
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 620px), print {
-
-
+ /* Navigation: Switch to a horizontal layout */
+    nav ul {
+        display: flex; /* Activate Flexbox */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav li {
+        display: inline;
+        font-size: 1em; 
+        margin: 0 5px;
+        background-color: transparent;
+    }
+    nav li a {
+        padding: 8px 10px;
+        color: #FDB827;
+    }
 }
-
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px), print {
     /*Desktop Viewport: Show desktop class, hide mobile-tablet class.*/
+   #wrapper {
+        max-width: 1200px; /* Constrain content width */
+    }
+    
+    /* Desktop Viewport: Hide mobile class, show tab-desk class. */
+    .mobile {
+        display: none;
+    }
 
+    .tab-desk {
+        display: block;
+    }
 
     /* Desktop Viewport: Style rules for main content */
+    main {
+        padding: 40px 20px;
+    }
+    .article-focus-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+     /* CVE Section: Columns*/
+    .cve-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .cve-list {
+        display: flex;
+        flex-direction: column; 
+        justify-content: left;
+    }
 
-
+    .cve-item {
+        background-color: #002D74; 
+        color: white;
+        text-align: center;
+    }
 }
+
+
 
 
 
 /* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px), print {
-
+    #wrapper {
+        max-width: 1600px;
+    }
 }
 
 /* Media Query for Print */
 @media print {
+  body {
+        background-color: #fff;
+        color: #000;
+    }
+
 
 }
