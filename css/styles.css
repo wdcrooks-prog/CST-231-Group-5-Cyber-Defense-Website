@@ -1,3 +1,4 @@
+
  /*  
 Author: Jada Morrison, Jordan Banks, Dawn Graves, William Crooks
 File Name: styles.css
@@ -27,9 +28,41 @@ body {
 
 img {
     max-width: 100%;
+    display: block;
+    
+}
+
+/* Style rules for hero image for matching background and adjustable sizing */
+.hero-image {
+    background-image: linear-gradient(#fef5e7);
+    background-position: center;
+    padding: 0 25%;
+    
+}
+
+/*Style Rules for her image web site title text*/
+.mobile-hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FDB827;
+  background-color: #002D74
     display: block
     height: auto
 }
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FDB827;
+  background-color: #002D74
+}
+
 
 /* Style rules for mobile viewport */
 
@@ -42,6 +75,10 @@ img {
     display: none;
 }
 
+.hero-text {
+    display: none;
+}
+
 /* Style rules for header area */
 .mobile h1, .mobile h3 {
     ont-size: 1.5em;
@@ -50,10 +87,57 @@ img {
 
 nav {
     background-color: #002D74;
+    display: inline-block;
 }
 
 
 /* Style rules for navigation area */
+.mobile-nav {
+    display: block;
+}
+.mobile-nav {
+     background-color: #002D74;
+     
+
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    text-align: center;
+
+}
+
+.mobile-nav li {
+    display: block; 
+    font-size: 1.5em;
+    font-family: Merriweather, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2px;
+   
+}
+
+.mobile-nav a {
+   background-color: #002D74;
+   display: inline-block;
+   padding: 1% 1%;
+   text-decoration: none;
+   color: #FDB827;
+}
+
+.mobile-nav ul li:active {
+    background-color: #FDB827;
+    color: #002D74;
+}
+
+.mobile-nav ul li a:active {
+    background-color: #FDB827;
+    color: #002D74;
+}
+
+/*Style Rules for Mobile Nave Area */
+nav {
+    display: none;
+}
 nav {
      background-color: #002D74;
 
@@ -128,6 +212,43 @@ footer a {
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 620px), print {
  /* Navigation: Switch to a horizontal layout */
+ /*Using flexblox to accomodate unknown range for tablets and large phones - Will C*/   
+    .tab-desk {
+        display: block;
+    }
+    .tab-desk ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #002D74;
+        display: flex;
+    }
+
+    .tab-desk ul li {
+        float: left;
+    }
+
+    .tab-desk ul li a {
+        display: block;
+        color: #FDB827;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .tab-desk ul li a:hover {
+        background-color: #FDB827;
+        color: #002D74;
+    }
+    .mobile-hero-text {
+        display: none;
+    }
+    .hero-text {
+        display: block;
+    }
+    .mobile-nav {
+        display: none;
+    }
+    
     nav ul {
         display: flex; /* Activate Flexbox */
         flex-wrap: wrap;
@@ -155,6 +276,45 @@ footer a {
     /* Desktop Viewport: Hide mobile class, show tab-desk class. */
     .mobile {
         display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .tab-desk {
+        display: block;
+    }
+
+    /* Desktop Viewport: Style rules for main content */
+    .mobile {
+        display: none;
+    }
+    .mobile-hero-text {
+        display: none;
+    }
+
+    
+    main {
+        padding: 40px 20px;
+    }
+    .article-focus-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 25px;
+        margin-bottom: 25px;
+    }
+     /* CVE Section: Columns*/
+    .cve-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .cve-list {
+        display: flex;
+        flex-direction: column; 
+        justify-content: left;
     }
 
     .tab-desk {
@@ -208,6 +368,8 @@ footer a {
         background-color: #fff;
         color: #000;
     }
+
+
 
 
 }
