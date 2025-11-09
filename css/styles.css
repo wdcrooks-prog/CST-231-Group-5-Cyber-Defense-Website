@@ -48,9 +48,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FDB827;
-  background-color: #002D74
-    display: block
-    height: auto
+  background-color: #002D74;
+  display: block;
+  height: auto;
 }
 
 .hero-text {
@@ -60,7 +60,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #FDB827;
-  background-color: #002D74
+  background-color: #002D74;
 }
 
 
@@ -81,7 +81,7 @@ img {
 
 /* Style rules for header area */
 .mobile h1, .mobile h3 {
-    ont-size: 1.5em;
+    font-size: 1.5em;
     font-family: 'Merriweather', sans-serif;
 }
 
@@ -113,6 +113,7 @@ nav {
     font-family: Merriweather, sans-serif;
     font-weight: bold;
     margin-bottom: 2px;
+    background-color:#002D74;
    
 }
 
@@ -124,15 +125,12 @@ nav {
    color: #FDB827;
 }
 
-.mobile-nav ul li:active {
-    background-color: #FDB827;
-    color: #002D74;
-}
-
 .mobile-nav ul li a:active {
     background-color: #FDB827;
     color: #002D74;
 }
+
+
 
 /*Style Rules for Mobile Nave Area */
 nav {
@@ -150,13 +148,12 @@ nav ul {
 }
 
 nav li {
-    background-color: #FDB827
+    background-color: #FDB827;
     display: block; 
     font-size: 1.5em;
     font-family: Merriweather, sans-serif;
     font-weight: bold;
     margin-bottom: 2px;
-   
 }
 
 nav li a {
