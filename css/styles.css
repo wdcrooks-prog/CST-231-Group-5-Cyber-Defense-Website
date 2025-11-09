@@ -94,7 +94,13 @@ nav {
 /* Style rules for navigation area */
 .mobile-nav {
     display: block;
+
 }
+
+.mobile-nav h2 {
+    color: #FDB827;
+}
+
 .mobile-nav {
      background-color: #002D74;
      
