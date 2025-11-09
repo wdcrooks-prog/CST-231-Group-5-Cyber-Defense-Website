@@ -122,6 +122,16 @@ nav {
    color: #FDB827;
 }
 
+.mobile-nav ul li:active {
+    background-color: #FDB827;
+    color: #002D74;
+}
+
+.mobile-nav ul li a:active {
+    background-color: #FDB827;
+    color: #002D74;
+}
+
 /*Style Rules for Mobile Nave Area */
 nav {
     display: none;
