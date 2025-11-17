@@ -30,7 +30,6 @@
     <div class="mobile-hero-text">
         <h1>Aggie's Cyber-Self-Defense</h1>
     </div>
-    
     <nav class="mobile-nav">
         <div id="mobile-links">
             <ul>
@@ -82,17 +81,20 @@
         <main>
             
             <h2>Header description Log line for purpose of site</h2>
-
-            <h3 class="yellow-header">Article Title</h3>
+            <div>
+                        
+                        <div onclick="fraud_ticker"() class = "cve-item"><h3>Scam 1: Social Media Scam Alert</h3></div>
+                        <iframe class="fraud_ticker" width="1200" height="60" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+                    </div>
+            <h3 class="yellow-header">Article of the Day:</h3>
 
             <article>
                 <section class="article-focus-section">
                     <div class="focus-article">
                         <!--Focus Article clickable image-->
-                        <p>Article of the Day:</p>
+                        <h1>Ghost Students!</h1>
                         <figure>
                         <img src="images/commcollegefakestudentsarticleclassimage.webp" alt="Group of students in large classroom">                        
-                        <img src="images/comm college fake students article class image.webp" alt="Group of students in large classroom">                        
                         <figcaption>Colleges have a new worry: ‘Ghost students’—AI powered fraud rings</figcaption>
                         </figure>
                     </div>
@@ -105,23 +107,40 @@
                 </section>
                 
                 <section class="article-row">
-                    <div class="article-card">Article 1: Phishing Tips</div>
-                    <div class="article-card">Useful Tools: Password Managers</div>
-                    <div class="article-card">Article 3: Multi-Factor Authentication</div>
+                    <h2>Top Stories</h1>
+                    <div class="article-card" onclick="article1()">Article 1: Phishing Tips</div>
+                    <article id="article1">
+                        <iframe src="https://krebsonsecurity.com/2025/11/google-sues-to-disrupt-chinese-sms-phishing-triad/" title="Krebs article on chinese phishing"></iframe>
+                    </article>
+                    
+                    <div class="article-card" onclick="article2()">Article 2: Useful Tool of the week: Free Bitwarden Password Managers"</div> 
+                    <article id=article2>   
+                        <iframe src="https://www.youtube.com/embed/SSLGa0LjTrA?si=ZVg4gflos9x3a8np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </article>
+
+                    <div class="article-card" onclick="article3()">Article 3: Actually Good Passwords</div>
+                    <article id="article3"> 
+                        <img src="images/pwbruteforcetable.png">   
+                        <a href="https://saropa-contacts.medium.com/size-matters-xkcd-was-right-and-the-2025-password-table-again-proves-it-6c80f4bb3e18" title="Password Brute Force Table" img="" ><h2>XKCD Was Right and The 2025 Password Table Again Proves It</h2></a>
+                        <p>How simpler random passphrases are harder to crack than randommized complicated passwords</p>
+                    </article>
                 </section>
     
                 <section class="cve-section">
-                    <div class="cve-heading">
-                        <h3 class="yellow-header">Current CVE's and Scams</h3>
-                    </div>
-                    
                     <div class="cve-list">
-                        <div class="cve-item">CVE 1: Latest Security Patch</div>
-                        <div class="cve-item">Scam 1: Social Media Scam Alert</div>
-                        <div class="cve-item">Phish scam: University Email Phishing</div>
+                        <h3 class="yellow-header" onclick="cve_high()" cursor="pointer">Critical Vulnerabilities and Scams</h3>
+                        <!--Will C - Created using external RSS.app service, connected to cve.io/rssfeed/severety/high.xml-->
+                            <iframe id="cve_high" width="100%" src="https://rss.app/embed/v1/list/CPHXwZXPecmoow5X" frameborder="0"></iframe>
                     </div>
+        
                 </section>
             </article>
+
+            <div>       
+                <div onclick="fraud_ticker()"><h3>Scam 1: Social Media Scam Alert</h3></div>
+                <!--Will C - Created using external RSS.app service, connected to https://fraudoftheday.com/feed -->  
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+            </div>
             
         </main>
         
