@@ -80,12 +80,11 @@
 
         <main>
             
-            <h2>Header description Log line for purpose of site</h2>
-            <div>
-                        
-                        <div onclick="fraud_ticker"() class = "cve-item"><h3>Scam 1: Social Media Scam Alert</h3></div>
-                        <iframe class="fraud_ticker" width="1200" height="60" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
-                    </div>
+            <h1 class="header_description">Your Go-To Guide for Protecting Your Digital World</h2>
+            <div>    
+                <div onclick="fraud_ticker()" class = "cve-item"><h3>Social Media Scam Alert</h3></div>
+                <iframe class="fraud_ticker" width="1200" height="60" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+            </div>
             <h3 class="yellow-header">Article of the Day:</h3>
 
             <article>
@@ -130,20 +129,20 @@
                     <div class="cve-list">
                         <h3 class="yellow-header" onclick="cve_high()" cursor="pointer">Critical Vulnerabilities and Scams</h3>
                         <!--Will C - Created using external RSS.app service, connected to cve.io/rssfeed/severety/high.xml-->
-                            <iframe id="cve_high" width="100%" src="https://rss.app/embed/v1/list/CPHXwZXPecmoow5X" frameborder="0"></iframe>
+                        <iframe class="cve_high" src="https://rss.app/embed/v1/list/CPHXwZXPecmoow5X" frameborder="0"></iframe>
+                    </div>
+                    <div>
+                        <h3 class="yellow-header" onclick="windows_hardening()" cursor="pointer">Windows Hardening Step-By-Step Guide</h3>
+                        <iframe class="windows_hardening" src="media/PROTECT - Hardening Microsoft Windows 10 and Windows 11 Workstations (July 2024).pdf" frameborder="0"></iframe>
                     </div>
         
                 </section>
             </article>
 
-            <div>       
-                <div onclick="fraud_ticker()"><h3>Scam 1: Social Media Scam Alert</h3></div>
-                <!--Will C - Created using external RSS.app service, connected to https://fraudoftheday.com/feed -->  
-                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
-            </div>
+            
             
         </main>
-        
+       
         <footer>
             <p>&copy; Copyright 2025. All Rights Reserved.</p>
             <p><a href="mailto:contact@email.com">contact@email.com</a></p> 
