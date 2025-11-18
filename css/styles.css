@@ -305,6 +305,12 @@ iframe {
     padding: 0; 
 }
 
+.social {
+    float: left;
+    padding: 2;
+    width: 20%;
+}
+
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 620px), print {
  /* Navigation: Switch to a horizontal layout */
