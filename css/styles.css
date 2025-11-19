@@ -305,12 +305,24 @@ iframe {
     padding: 0; 
 }
 
-.social {
-    padding: 2;
+.social, p, a, img {
+    text-align: center;
+    background-color: #002D74;
+    color: #FDB827;
+    padding-top: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 0%;
+    
+}
+
+.social img {
+    padding: 2%;
     width: 5%;
     height: 5%;
     display: inline-flex;
     grid-template-columns: 1;
+   
 }
 
 /* Media Query for Tablet Viewport */
