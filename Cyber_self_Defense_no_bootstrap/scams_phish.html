@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--    
+    Student Name: Jada Morrison, Jordan Banks, Dawn William Crooks
+    File Name: template.html
+    Today's Date: 10/30/2025
+-->
+<!--Ch3 Lab3 Will Crooks New Webpages -->
+<html lang="en">
+
+<head>
+    <!--Ch11 Lab3 Will Crooks Update Page title for SEO best practices-->
+    <title>Phishing Scams - Fraud Alerts | Aggies Cyber-Self-Defense</title>
+        <meta charset="utf-8">
+    
+    
+    <!--Ch5 Lab3 Create Meta viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--CH11 Page Description Meta for search results summary-->
+    <meta name="description" content="Get Updates on current Cybersecurity threats, scams, and tools to stay safe online!">
+    
+    <!--Ch5 Lab3 Selected Custom Google Font-->
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    
+    <!--CH7 Lab3 Favicon link-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <!--CH12 Lab3 Bootstrap CDN for jumbotron, navbar, and grid system-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CH4 Lab 3 Create CSS styles.css file, minimum 12 style rules-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Ch12 Lab3 Custom CSS bootstrap styles file linked-->
+    <link rel="stylesheet" href="css/bootstrap_custom_styles.css">
+</head>
+
+
+
+<body>
+     <!--Nav for Mobile Viewports-->
+
+    <div class="mobile-hero-text">
+        <h1>Aggie's Cyber-Self-Defense</h1>
+    </div>
+    <nav class="mobile-nav">
+        <div id="mobile-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+    </nav>
+
+    <div id="wrapper">
+        
+        <header>
+            <div class="hero-text">
+                <h1>Aggie's Cyber-Self-Defense</h1>
+            </div>
+            <div class="hero-image">
+                <a href="index.html"><img src="images/bulldogfightingscams.png" alt="Orange Cartoon Bulldog on computer"></a>
+        
+            </div>   
+             
+            
+  
+        </header>
+
+         <!--Nav for Tablet/Desktop Viewports-->
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Begin Main Content -->
+
+        <main>
+            <!--Ch3 Lab3  <MAIN> Content should have  <H1>, <p>, <img>, <ul>/<li> list-->
+
+            <div>       
+                <div onclick="fraud_ticker()"><h3>Social Media Scam Alert</h3></div>
+                <!--Will C - Created using external RSS.app service, connected to https://fraudoftheday.com/feed -->  
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+            </div>
+
+            <h1>Phishing goes beyond sketchy emails. Watch out:</h1>
+            
+                <p>Phishing is a major cyber threat for college students. It exploits human psychology, not tech flaws. Attackers create urgency or curiosity to trick you. One click can compromise your data. This is an entire business model, not a prank.</p>
+                <p>This guide helps spot traps quickly.</p>
+            
+            <ul>
+                <li >Fake School Alerts: Emails from Canvas or IT asking for your password on a fake login page.</li>
+                <li >QR Code Traps (Quishing): Malicious codes on flyers promising free deals that lead to bad sites. Remote students see these in emails or public places.</li>
+                <li >Text or Voice Scams (Smishing/Vishing): Messages requesting your MFA code, often impersonating a bank or the university.</li>
+            </ul>
+                <p>The Simple Tricks Behind Phishing</p>
+                <p>Attackers use low-tech deception.</p>
+            <ul>
+                <li >Link Masking: The text says "Official Site," but the actual link is malicious.</li>
+            <ul>
+                <li >Tip: Hover your mouse to preview its real destination.</li>
+            </ul>
+                <li >Lookalike Domains: Attackers use similar domains like microscft-login.com.</li>
+            <ul>
+                <li >Tip: Always double-check the real domain name.</li>
+            </ul>
+            </ul>
+            <p>Quick Safety Checklist for Students</p>
+            <p>Reduce risk by following steps:</p>
+            <ul>
+                <li >Preview links before you click.</li>
+                <li >Avoid scanning random QR codes; type the URL.</li>
+                <li >Turn on MFA for all accounts. It is crucial for security.</li>
+                <li >Verify urgent requests via an official channel.</li>
+                <li >Use strong, unique passwords. (A password manager is helpful).</li>
+                <li >Keep your devices updated. Run antivirus scans.</li>
+            </ul>
+            <p>If You Fall for a Phishing Attempt</p>
+            <p>act immediately if you click a bad link.</p>
+            <ol>
+                <li >Disconnect from Wi-Fi or internet fast.</li>
+                <li >Change the password on another secure device.</li>
+                <li >Enable or confirm MFA is active.</li>
+                <li >Report it: Forward the message to IT/security.</li>
+                <li >Monitor accounts for unusual activity.</li>
+            </ol>
+
+            <p>Final Tip: When in Doubt, Pause</p>
+            <p>Attackers want you rushed. A five-second check saves you time. Security starts with awareness, even when studying remotely.</p>
+
+            
+
+            
+        </main>
+    
+        <div>       
+                <div onclick="fraud_ticker()"><h3>Scam 1: Social Media Scam Alert</h3></div>
+                <!--Will C - Created using external RSS.app service, connected to https://fraudoftheday.com/feed -->  
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+        </div>
+            
+        
+        
+        <<footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2025. All Rights Reserved.</p>
+                <p><a href="mailto:contact@email.com">contact@email.com</a></p>
+            </div>
+            <div class="social">
+                <p>Please visit our socials!</p>
+                <div class="social_img">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/x_twitter.png" alt="Twitter logo"></a> 
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
