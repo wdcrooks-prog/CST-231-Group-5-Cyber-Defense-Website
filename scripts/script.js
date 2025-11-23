@@ -4,6 +4,7 @@ File Name: script.js
 Today's Date: 11/09/2025
 */
 
+/* Ch10 Lab3 Will Crooks Created scripts.js for hamburger, and article animation functions */
 
 function hamburger() {
     var menu = document.getElementById("mobile-links");
