@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--    
+    Student Name: Jada Morrison, Jordan Banks, Dawn William Crooks
+    File Name: template.html
+    Today's Date: 10/30/2025
+-->
+
+<html lang="en">
+
+<head>
+    <title>Cybersecurity News - Fraud Alerts | Aggies Cyber-Self-Defense</title>
+        <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">  
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">  
+</head>
+
+
+
+<body>
+     <!--Nav for Mobile Viewports-->
+
+    <div class="mobile-hero-text">
+        <h1>Aggie's Cyber-Self-Defense</h1>
+    </div>
+    <nav class="mobile-nav">
+        <div id="mobile-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+    </nav>
+
+    <div id="wrapper">
+        
+        <header>
+            <div class="hero-text">
+                <h1>Aggie's Cyber-Self-Defense</h1>
+            </div>
+            <div class="hero-image">
+                <a href="index.html"><img src="images/bulldogcyberhygiene.png" alt="Orange Cartoon Bulldog on computer"></a>
+        
+            </div>   
+             
+            
+  
+        </header>
+
+         <!--Nav for Tablet/Desktop Viewports-->
+            
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Begin Main Content -->
+
+        <main>
+            <div>       
+                <div onclick="fraud_ticker()"><h3>Social Media Scam Alert</h3></div>
+                <!--Will C - Created using external RSS.app service, connected to https://fraudoftheday.com/feed -->  
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
+            </div>
+            
+            <h2>Header description Log line for purpose of site</h2>
+
+            <h3 class="yellow-header">Article Title</h3>
+
+            <article>
+                <section class="article-focus-section">
+                    <div class="focus-article">
+                        <!--Focus Article clickable image-->
+                        <p>Article of the Day:</p>
+                        <figure>
+                        <img src="images/commcollegefakestudentsarticleclassimage.webp" alt="Group of students in large classroom">                        
+                        <img src="images/comm college fake students article class image.webp" alt="Group of students in large classroom">                        
+                        <figcaption>Colleges have a new worry: ‘Ghost students’—AI powered fraud rings</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="focus-article">
+                        <h4>Focus Article Details</h4>
+                        <p>The “ghost-student” epidemic that has been attacking California’s community college system is infesting the nation, with colleges in Arizona, Indiana, Oregon, New Jersey, and Michigan working to defend their institutions from AI-powered fraud rings trying to blend in with legitimate students heading back to school. </p>
+                    	<a target="_blank" href="https://fortune.com/2025/08/23/ghost-students-colleges-back-to-school/">Link to Article</a>
+        		    </div>
+                </section>
+                
+                <section class="article-row">
+                    <div class="article-card">Article 1: Phishing Tips</div>
+                    <div class="article-card">Useful Tools: Password Managers</div>
+                    <div class="article-card">Article 3: Multi-Factor Authentication</div>
+                </section>
+    
+                <section class="cve-section">
+                    <div class="cve-heading">
+                        <h3 class="yellow-header">Current CVE's and Scams</h3>
+                    </div>
+                    
+                    <div class="cve-list">
+                        <div class="cve-item">CVE 1: Latest Security Patch</div>
+                        <div class="cve-item">Scam 1: Social Media Scam Alert</div>
+                        <div class="cve-item">Phish scam: University Email Phishing</div>
+                    </div>
+                </section>
+            </article>
+            
+        </main>
+        
+        
+            
+        
+        
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2025. All Rights Reserved.</p>
+                <p><a href="mailto:contact@email.com">contact@email.com</a></p>
+            </div>
+            <div class="social">
+                <p>Please visit our socials!</p>
+                <div class="social_img">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/x_twitter.png" alt="Twitter logo"></a> 
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
