@@ -59,3 +59,29 @@ function fraud_ticker() {
         article.style.display = 'block';
     }
 }
+
+function toggleDisplay(element) {
+    if (element.style.display === 'block') {
+        element.style.display = 'none'; // Hide it if it's showing
+    } else {
+        element.style.display = 'block'; // Show it if it's hidden or has no display style set
+    }
+}
+
+function cyber_hygiene_cisa_1() {
+    var article = document.getElementById('cyber_hygiene_cisa_1');
+    if (article.style.display === 'block') {
+        article.style.display = 'none';
+    } else {
+        article.style.display = 'block';
+    }
+}
+
+function cyber_hygiene_cisa_2() {
+    var article = document.getElementById('cyber_hygiene_cisa_2');
+    if (article.style.display === 'block') {
+        article.style.display = 'none';
+    } else {
+        article.style.display = 'block';
+    }
+}
