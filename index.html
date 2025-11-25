@@ -101,10 +101,12 @@
             
             <!--Ch3 Lab3  <MAIN> Content should have  <H1>, <p>, <img>, <ul>/<li> list-->
             <h1 class="header_description">Your Go-To Guide for Protecting Your Digital World</h2>
-            <div>    
-                <div onclick="fraud_ticker()" class = "cve-item"><h3>Social Media Scam Alert</h3></div>
-                <iframe class="fraud_ticker" width="1200" height="60" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>     
-            </div>
+            
+            <!-- Ch 7 Lab 3 Dawn Graves section converted from div to section -->
+            <section class="alert-section">
+                <h3 onclick="fraud_ticker()">Social Media Scam Alert</h3>
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>
+            </section>
 
             <!---->
             <h3 class="yellow-header">Article of the Day:</h3>
@@ -149,19 +151,20 @@
                     </article>
                 </section>
                 
-                <!--Ch7 Lab3 Integrate Article and Section and Aside Elements-->
+                <!--Ch7 Lab3 Dawn Graves Integrate Article and Section and Aside Elements-->
                 <section class="cve-section">
+                    <!-- New section title that will span both grid columns -->
+                    <h2 class="section-title">Critical Vulnerabilities & Windows Hardening</h2>
                     <div class="cve-list">
                         <h3 class="yellow-header" onclick="cve_high()" cursor="pointer">Critical Vulnerabilities and Scams</h3>
-                        <!--Will C - Created using external RSS.app service, connected to cve.io/rssfeed/severety/high.xml-->
                         <iframe class="cve_high" src="https://rss.app/embed/v1/list/CPHXwZXPecmoow5X" frameborder="0"></iframe>
                     </div>
                     <div>
                         <h3 class="yellow-header" onclick="windows_hardening()" cursor="pointer">Windows Hardening Step-By-Step Guide</h3>
                         <iframe class="windows_hardening" src="media/PROTECT - Hardening Microsoft Windows 10 and Windows 11 Workstations (July 2024).pdf" frameborder="0"></iframe>
                     </div>
-        
                 </section>
+
             </article>
 
             

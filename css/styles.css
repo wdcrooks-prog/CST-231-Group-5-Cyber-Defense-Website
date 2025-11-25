@@ -7,7 +7,7 @@ Date: 10/30/2025
 /*Ch4 Lab 3 Create CSS styles.css file, minimum 12 style rules*/
 
 /* CSS Reset */
-body, header, main, footer, img, ul, h1, h3, aside, figure, figcaption, div, section, a, audio, video {
+body, header, main, footer, img, ul, h1, h3, article, aside, figure, figcaption, div, section, a, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -112,6 +112,55 @@ img, video {
 .hero-text {
     display: none;
 }
+
+/*-- Ch7 lab 3 Dawn Graves New Semantic + Visual Enhancements-- */
+
+/* Make the main hero heading pop with text shadow */
+.hero-text h1,
+.mobile-hero-text h1 {
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow requirement */
+}
+
+/* Ch7 lab 3 Dawn Graves Use rgba() and box shadow on article cards */
+.article-card {
+background-color: rgba(216, 216, 216, 0.9); /* opacity via rgba */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* box shadow requirement */
+}
+
+/* Ch7 lab 3 Dawn Graves Use rgba() and box shadow on article cards */
+.article-card {
+background-color: rgba(216, 216, 216, 0.9); /* opacity via rgba */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* box shadow requirement */
+}
+
+/* Ch7 lab 3 Dawn Graves Optional: slightly translucent focus article panels */
+
+.focus-article {
+background-color: rgba(216, 216, 216, 0.95);
+}
+
+/* Ch7 lab 3 Dawn Graves Section heading used inside grid to span across both columns */
+.section-title {
+font-size: 1.6em;
+font-weight: bold;
+margin-bottom: 1rem;
+text-align: left;
+}
+
+/* Ch7 lab 3 Dawn Graves Optional: slightly translucent focus article panels */
+
+.focus-article {
+background-color: rgba(216, 216, 216, 0.95);
+}
+
+/* Ch7 lab 3 Dawn Graves Section heading used inside grid to span across both columns */
+.section-title {
+font-size: 1.6em;
+font-weight: bold;
+margin-bottom: 1rem;
+text-align: left;
+}
+
 
 /* Style rules for header area */
 .mobile h1, .mobile h3 {
@@ -478,6 +527,18 @@ iframe {
         grid-template-columns: 1fr 2fr;
         gap: 25px;
         margin-bottom: 25px;
+    }
+
+    /* Ch 7 Lab 3 Dawn Graves spans across both grid columns */
+    .cve-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: flex-start;
+    }
+
+    .cve-section .section-title {
+    grid-column: 1 / -1; 
     }
         
     
