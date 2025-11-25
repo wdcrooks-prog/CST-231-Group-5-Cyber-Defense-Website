@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--    
+    Student Name: Jada Morrison, Jordan Banks, Dawn William Crooks
+    File Name: template.html
+    Today's Date: 10/30/2025
+-->
+<!--Ch3 Lab3 Will Crooks New Webpages -->
+<html lang="en">
+
+<head>
+    <!--Ch11 Lab3 Will Crooks Update Page title for SEO best practices-->
+    <title>Phishing Scams - Fraud Alerts | Aggies Cyber-Self-Defense</title>
+        <meta charset="utf-8">
+    
+    
+    <!--Ch5 Lab3 Create Meta viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--CH11 Page Description Meta for search results summary-->
+    <meta name="description" content="Get Updates on current Cybersecurity threats, scams, and tools to stay safe online!">
+    
+    <!--Ch5 Lab3 Selected Custom Google Font-->
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    
+    <!--CH7 Lab3 Favicon link-->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <!--CH12 Lab3 Bootstrap CDN for jumbotron, navbar, and grid system-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CH4 Lab 3 Create CSS styles.css file, minimum 12 style rules-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Ch12 Lab3 Custom CSS bootstrap styles file linked-->
+    <link rel="stylesheet" href="css/bootstrap_custom_styles.css">
+</head>
+
+
+
+<body>
+     <!--Nav for Mobile Viewports-->
+
+    <div class="mobile-hero-text">
+        <h1>Aggie's Cyber-Self-Defense</h1>
+    </div>
+    <nav class="mobile-nav">
+        <div id="mobile-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+    </nav>
+
+    <div id="wrapper">
+        
+        <header>
+            <div class="hero-text">
+                <h1>Aggie's Cyber-Self-Defense</h1>
+            </div>
+            <div class="hero-image">
+                <a href="index.html"><img src="images/bulldogfightingscams.png" alt="Orange Cartoon Bulldog on computer"></a>
+        
+            </div>   
+             
+            
+  
+        </header>
+
+         <!--Nav for Tablet/Desktop Viewports-->
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>   
+                <li><a href="about.html">About Us</a></li> 
+                <li><a href="cyber_hygiene.html">Cyber Hygiene</a></li>
+                <li><a href="scams_phish.html">Current Scams</a></li> 
+                <li><a href="personal_data.html">Data Security</a></li>
+                <li><a href="personal_safety.html">Cyber-Safety</a></li>  
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Begin Main Content -->
+
+        <main>
+            <!--Ch3 Lab3  <MAIN> Content should have  <H1>, <p>, <img>, <ul>/<li> list-->
+            
+            <!-- Ch 7 Lab 3 Dawn Graves section converted from div to section -->
+            <section>class="alert-section">
+                <h3 onclick="fraud_ticker()">Social Media Scam Alert</h3>
+                <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>
+            </section>
+
+            <!--Ch7 Lab3 Dawn Graves Integrate Article and Section and Aside Elements-->
+            <div class="Law-Enforcement-Contacts">
+                <!-- New section title that will span both grid columns -->
+                <div>
+                    <h2 class="yellow-header" cursor="pointer">Your Sources for Help in a Cyber Emergency</h2>
+                        <a href="https://www.ic3.gov/CSA" target="_blank"><img src="images/IC3 image.webp" frameborder="0"></a></li>
+                        <a href="https://www.cisa.gov/" target="_blank"><img src="images/CISA Logo.png" frameborder="0"></a></li>
+                    
+                </div>
+            </div>
+
+            
+
+
+            <!-- TABLE: 5+ columns, 6+ rows; includes colspan + rowspan -->
+            <div class="table-wrap">
+                <table class="scam-table" aria-describedby="scamTableDesc">
+                <caption id="scamTableDesc" class="visually-hidden">
+                    Matrix of common scams with channels, red flags, typical bait, and recommended actions.
+                </caption>
+                <thead>
+                    <tr>
+                    <th scope="col" colspan="5">Campus &amp; Online Scams — Quick Reference</th> <!-- colspan --> 
+                    </tr>
+                    <tr>
+                    <th scope="col">Scam Type</th>
+                    <th scope="col">Channel</th>
+                    <th scope="col">Key Red Flags</th>
+                    <th scope="col">Typical Bait</th>
+                    <th scope="col">What To Do</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row" rowspan="2">Phishing</th> <!-- rowspan -->
+                    <td>Email</td>
+                    <td>Urgent tone, mismatched domain, attachments</td>
+                    <td>“Reset your password”/“Account suspended”</td>
+                    <td>Verify sender; don’t click; report to IT/Sec</td>
+                    </tr>
+                    <tr>
+                    <td>SMS</td>
+                    <td>Short links, asks for MFA code</td>
+                    <td>“Package delivery failed” or bank alerts</td>
+                    <td>Open app directly; never share codes</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Quishing</th>
+                    <td>QR Code</td>
+                    <td>Random flyers, taped codes, free giveaways</td>
+                    <td>“Free gift card” / “Event entry”</td>
+                    <td>Type the URL; avoid unknown codes</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Job Scam</th>
+                    <td>Email/Social</td>
+                    <td>Upfront payment requests, gift cards</td>
+                    <td>“Easy remote job, $500/week”</td>
+                    <td>Use career portal; never prepay equipment</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Tech Support</th>
+                    <td>Pop-up/Call</td>
+                    <td>Scary warnings, phone number to call</td>
+                    <td>“Virus detected—call now”</td>
+                    <td>Close tab; contact official support</td>
+                    </tr>
+                    <tr>
+                    <th scope="row">Marketplace Fraud</th>
+                    <td>DM/Payment App</td>
+                    <td>Off-platform payments, overpayment</td>
+                    <td>“I’ll pay extra—send me the balance”</td>
+                    <td>Use campus meetups; official payment escrow</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <!-- ALT LIST for mobile (shown when table is hidden on small screens) -->
+                <div class="scam-table-alt">
+                <h2>Common Scams (Mobile Summary)</h2>
+                <ul class="alt-cards">
+                    <li>
+                    <strong>Phishing (Email/SMS)</strong>
+                    <p><em>Flags:</em> urgency, domain mismatch, asks for MFA.</p>
+                    <p><em>Do:</em> verify sender, don’t click, report.</p>
+                    </li>
+                    <li>
+                    <strong>Quishing (QR Code)</strong>
+                    <p><em>Flags:</em> random flyers, free giveaways.</p>
+                    <p><em>Do:</em> type the URL manually.</p>
+                    </li>
+                    <li>
+                    <strong>Job Scam</strong>
+                    <p><em>Flags:</em> gift cards, prepayment.</p>
+                    <p><em>Do:</em> check career portal only.</p>
+                    </li>
+                    <li>
+                    <strong>Tech Support</strong>
+                    <p><em>Flags:</em> scary popups, call this number.</p>
+                    <p><em>Do:</em> close tab, contact official support.</p>
+                    </li>
+                    <li>
+                    <strong>Marketplace Fraud</strong>
+                    <p><em>Flags:</em> off-platform pay, overpayment.</p>
+                    <p><em>Do:</em> meet safely, use escrow.</p>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            <section class="phishing_guide">
+            <h1>Guide for Spotting a Phish!</h1>
+
+            <h3>Phishing goes beyond sketchy emails. Watch out:</h3>
+            
+                <p>Phishing is a major cyber threat for college students. It exploits human psychology, not tech flaws. Attackers create urgency or curiosity to trick you. One click can compromise your data. This is an entire business model, not a prank.</p>
+                <p>This guide helps spot traps quickly.</p>
+            
+                <ul>
+                    <li >Fake School Alerts: Emails from Canvas or IT asking for your password on a fake login page.</li>
+                    <li >QR Code Traps (Quishing): Malicious codes on flyers promising free deals that lead to bad sites. Remote students see these in emails or public places.</li>
+                    <li >Text or Voice Scams (Smishing/Vishing): Messages requesting your MFA code, often impersonating a bank or the university.</li>
+                </ul>
+                    <p>The Simple Tricks Behind Phishing</p>
+                    <p>Attackers use low-tech deception.</p>
+                <ul>
+                    <li >Link Masking: The text says "Official Site," but the actual link is malicious.</li>
+                <ul>
+                    <li >Tip: Hover your mouse to preview its real destination.</li>
+                </ul>
+                    <li >Lookalike Domains: Attackers use similar domains like microscft-login.com.</li>
+                <ul>
+                    <li >Tip: Always double-check the real domain name.</li>
+                </ul>
+                </ul>
+                <p>Quick Safety Checklist for Students</p>
+                <p>Reduce risk by following steps:</p>
+                <ul>
+                    <li >Preview links before you click.</li>
+                    <li >Avoid scanning random QR codes; type the URL.</li>
+                    <li >Turn on MFA for all accounts. It is crucial for security.</li>
+                    <li >Verify urgent requests via an official channel.</li>
+                    <li >Use strong, unique passwords. (A password manager is helpful).</li>
+                    <li >Keep your devices updated. Run antivirus scans.</li>
+                </ul>
+                <p>If You Fall for a Phishing Attempt</p>
+                <p>act immediately if you click a bad link.</p>
+                <ol>
+                    <li >Disconnect from Wi-Fi or internet fast.</li>
+                    <li >Change the password on another secure device.</li>
+                    <li >Enable or confirm MFA is active.</li>
+                    <li >Report it: Forward the message to IT/security.</li>
+                    <li >Monitor accounts for unusual activity.</li>
+                </ol>
+
+                <p>Final Tip: When in Doubt, Pause</p>
+                <p>Attackers want you rushed. A five-second check saves you time. Security starts with awareness, even when studying remotely.</p>
+
+            
+
+            
+        </main>
+    
+        
+            
+        
+        
+        <footer>
+            <!--Ch3 lab3 Jada Morrison Added E-Mail and telephone-->
+            <div class="copyright">
+                <p>&copy; Copyright 2025. All Rights Reserved.</p>
+                <p><a href="mailto:contact@email.com">Email: jpmorrison@aggies.ncat.edu</p>
+                <p><a href="tel:+18661234567">Phone: 1-866-123-4567</a></p>
+            </div>
+            <div class="social">
+                <p>Please visit our socials!</p>
+                <div class="social_img">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/x_twitter.png" alt="Twitter logo"></a> 
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
