@@ -390,6 +390,46 @@ iframe {
     background-color: #d8d8d8;
 }
 
+/* Links to Law enforcement agencies for Scam page */
+.Law-Enforcement-Contacts a {
+    display: inline-block;
+}
+
+/*cyber hygiene page CISA suggestions formatting */
+.cyber_hygiene_cisa, h1, h2, h3 {
+    text-align: left;
+    display: inline-flexbox;
+    margin: 0%;
+    padding-top: 5%;
+    font-size: larger;
+}
+
+.cyber_hygiene_cisa li {
+    text-align: left;
+    color:#d8d8d8 ;
+    font-size: large;
+    padding-left: 5%;
+    background-color: #002D74;
+}
+
+.cyber_hygiene_cisa p {
+    color: #d8d8d8;
+    text-align: left;
+    padding-left: 5%;
+    font-size: large;
+}
+
+.cyber_hygiene_services h1, h2, h3{
+    background-color: #002D74;
+    color:#FDB827;
+}
+
+.cyber_hygiene_services p {
+    background-color: #002D74;
+    color:#d8d8d8;
+}
+    
+
 /* Media Query for Tablet Viewport */
 /*CH5 Lab3 Add Media Queries*/
 @media screen and (min-width: 620px), print {
