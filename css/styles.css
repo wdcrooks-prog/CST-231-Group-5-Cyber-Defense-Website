@@ -777,7 +777,7 @@ aside {
   background: #1a4fb3;
 }
 
-/* CH5 Lab3 Joradn Tablet+: arrange fields in two columns */
+/* CH5 Lab3 Jordan Tablet+: arrange fields in two columns */
 @media (min-width: 768px) {
   .report-form {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -785,7 +785,7 @@ aside {
   .form-actions { grid-column: 1 / -1; }
 }
 
-/* CH5 Lab3 Joradn Desktop: a little more breathing room */
+/* CH5 Lab3 Jordan Desktop: a little more breathing room */
 @media (min-width: 1000px) {
   .report-form {
     padding: 1.25rem 1.5rem;
@@ -798,7 +798,7 @@ aside {
 
 
 /* Media Query for Large Desktop Viewports */
-/*CH5 Lab3 Joradn Add Media Queries*/
+/*CH5 Lab3 Jordan Add Media Queries*/
 @media screen and (min-width: 1921px), print {
     #wrapper {
         max-width: 1600px;

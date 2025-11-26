@@ -10,7 +10,8 @@
 
 <head>
     <!--Ch11 Lab3 Will Crooks Update Page title for SEO best practices-->
-    <title>Contact Us Form - Social Network info | Aggies Cyber-Self-Defense</title>
+    <!--Ch 8 Lab3 Report a Scam Form Title update Jordan Banks -->
+    <title>Contact Us Report a Scam Form | Aggies Cyber-Self-Defense</title>
     
     
     <!--Ch5 Lab3 Create Meta viewport-->
@@ -72,6 +73,8 @@
             </div>
             <div class="hero-image">
                 <a href="index.html"><img src="images/orangebulldogoncomputer.png" alt="Orange Cartoon Bulldog on computer"></a>
+               
+
         
             </div>   
              
@@ -94,15 +97,91 @@
 
 
         <!-- Begin Main Content -->
-
-
         <main>
+
             <!--Ch3 Lab3  <MAIN> Content should have  <H1>, <p>, <img>, <ul>/<li> list-->
             <!-- Ch 7 Lab 3 Dawn Graves section converted from div to section -->
             <section class="alert-section">
                 <h3 onclick="fraud_ticker()">Social Media Scam Alert</h3>
                 <iframe class="fraud_ticker" src="https://rss.app/embed/v1/ticker/ZgfQ5QaJwSQVlhla" frameborder="0"></iframe>
             </section>
+
+             <h3 style="text-align: center;">Report a Suspicious Message</h3>
+                <p id="form-help">Use this form to report phishing, quishing, job scams, or other suspicious activity.</p>
+            
+             <!--Ch 8 Lab3 Report a Scam Form Elements Jordan Banks -->
+            <form class="report-form" action="#" method="post" aria-describedby="form-help">
+                <!-- Name (required) -->
+                <div class="form-field">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" placeholder="First Last" required>
+                </div>
+
+                <!-- Email (required) -->
+                <div class="form-field">
+                <label for="email">University Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" placeholder="you@school.edu" required>
+                </div>
+
+                <!-- Role (select) -->
+                <div class="form-field">
+                <label for="role">Your Role</label>
+                <select id="role" name="role">
+                    <option value="">Choose one</option>
+                    <option>Student</option>
+                    <option>Faculty</option>
+                    <option>Staff</option>
+                    <option>Alumni</option>
+                    <option>Visitor</option>
+                </select>
+                </div>
+
+                <!-- Incident date (date input) -->
+                <div class="form-field">
+                <label for="date">Incident Date</label>
+                <input id="date" name="date" type="date">
+                </div>
+
+                <!-- Channel (radio) -->
+                <fieldset class="form-field">
+                <legend>Channel</legend>
+                <label><input type="radio" name="channel" value="email"> Email</label>
+                <label><input type="radio" name="channel" value="sms"> SMS/Text</label>
+                <label><input type="radio" name="channel" value="qr"> QR Code</label>
+                <label><input type="radio" name="channel" value="social"> Social Media</label>
+                </fieldset>
+
+                <!-- Suspicious URL (url input) -->
+                <div class="form-field">
+                <label for="url">Suspicious URL (if any)</label>
+                <input id="url" name="url" type="url" placeholder="https://example.com">
+                </div>
+
+                <!-- Attachment (file upload) — extra element not used before -->
+                <div class="form-field">
+                <label for="attachment">Attach Screenshot/Email (optional)</label>
+                <input id="attachment" name="attachment" type="file" accept=".png,.jpg,.jpeg,.pdf,.eml">
+                </div>
+
+                <!-- Details (textarea) -->
+                <div class="form-field form-field--full">
+                <label for="details">Details</label>
+                <textarea id="details" name="details" rows="6" placeholder="Describe what happened..."></textarea>
+                </div>
+
+                <!-- Consent (required checkbox) -->
+                <div class="form-field">
+                <label>
+                    <input type="checkbox" name="consent" required>
+                    I confirm this report is accurate to the best of my knowledge.
+                </label>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-actions">
+                <button type="submit" class="btn">Submit Report</button>
+                </div>
+            </form>
 
 
            
