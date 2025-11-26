@@ -1,0 +1,10 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+Disallow /template.html
+Disallow /inex_test.html
+
+
+Sitemap: https://wdcrooks-prog.github.io/CST-231-Group-5-Cyber-Defense-Website/sitemap.html
