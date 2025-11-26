@@ -57,6 +57,20 @@ img, video {
     
 }
 
+button {
+    border-radius: 15px;
+    background-color: #ddd;
+    color: #003078;
+    
+}
+
+button:hover {
+    background-color:#FDB827;
+    color: black;
+}
+
+
+
 /*style Rules for Video elements*/
 .video_hygiene_intro {
     
@@ -402,6 +416,7 @@ iframe {
     margin: 0%;
     padding-top: 5%;
     font-size: larger;
+    grid-template-columns: 2;
 }
 
 .cyber_hygiene_cisa li {
@@ -427,6 +442,34 @@ iframe {
 .cyber_hygiene_services p {
     background-color: #002D74;
     color:#d8d8d8;
+}
+
+/* Cyber Hygiene Columns for clickable button Articles */
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Stacks the children vertically: .top-row, then aside */
+  min-height: 50vh; /* Optional: Set a height for the demonstration */
+}
+
+.top-row {
+  display: flex; /* Makes the articles arrange horizontally */
+  flex-grow: 1; /* Allows this row to take up all remaining vertical space */
+}
+
+#article-left {
+  flex: 1; /* Makes this article take up half the width of .top-row */
+  /* Add styling here */
+}
+
+#article-right {
+  flex: 1; /* Makes this article take up the other half of the width */
+  /* Add styling here */
+}
+
+aside {
+  /* This element will naturally appear below .top-row due to flex-direction: column */
+  /* Add styling here */
+  height: 100px; /* Give the footer a fixed height */
 }
     
 
