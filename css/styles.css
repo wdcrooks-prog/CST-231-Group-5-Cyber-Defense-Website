@@ -69,12 +69,15 @@ button:hover {
     color: black;
 }
 
+.no_hover:hover {
+    background-color:#ddd;
+    cursor: default;
+    color: #003078;
+}
+
 
 
 /*style Rules for Video elements*/
-.video_hygiene_intro {
-    
-}
 
 /* Style rules for hero image for matching background and adjustable sizing */
 /*Ch6 Lab3 Apply Gradient*/
@@ -445,31 +448,53 @@ iframe {
 }
 
 /* Cyber Hygiene Columns for clickable button Articles */
-.flex-container {
-  display: flex;
-  flex-direction: column; /* Stacks the children vertically: .top-row, then aside */
-  min-height: 50vh; /* Optional: Set a height for the demonstration */
+.container-flex {
+  display: flex; /* This is the key rule */
+  gap: 20px; /* Adds space between the columns */
+  /* Optional: Set the width of the whole section */
+  width: 100%;
 }
 
-.top-row {
-  display: flex; /* Makes the articles arrange horizontally */
-  flex-grow: 1; /* Allows this row to take up all remaining vertical space */
+/* 2. Style the individual columns */
+.column {
+  /* This tells the column to grow and share the available space equally */
+  flex-grow: 1; 
+  /* Sets the initial size of each column */
+  flex-basis: 0; 
+  /* Sets the content to take up the same amount of space */
+  /* This combination (flex: 1 1 0;) is a common shorthand for equal columns */
 }
 
-#article-left {
-  flex: 1; /* Makes this article take up half the width of .top-row */
-  /* Add styling here */
-}
-
-#article-right {
-  flex: 1; /* Makes this article take up the other half of the width */
-  /* Add styling here */
-}
 
 aside {
   /* This element will naturally appear below .top-row due to flex-direction: column */
   /* Add styling here */
   height: 100px; /* Give the footer a fixed height */
+}
+
+/* Ch9 lab3 Will Crooks class rules for cyberstalking static content */
+.cyberstalking_tips h4 h5 {
+    background-color: #002D74;
+    border-radius: 25px;
+    padding-left: 10%;
+    margin-top: 5%;
+
+}
+
+.cyberstalking_tips ul li {
+    background-color: #d8d8d8;
+    padding: .5%;
+    
+}
+
+.cyberstalking_tips p {
+    text-align: left;   
+    background-color:#002D74; 
+    border-radius: 25px;
+    padding: 2%;
+    margin: 1%;
+    padding-bottom: 5%;
+    
 }
     
 
