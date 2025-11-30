@@ -380,6 +380,17 @@ iframe {
     padding: 0; 
 }
 
+/* Ch10 Lab3 – animation for scam alert */
+@keyframes alertPulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.alert-animated {
+    animation: alertPulse 2s ease-in-out infinite;
+}
+
 /* Footer socials class for links to facebook and twitter/X */
 /* Ch11 Lab3 Will Crooks Update Footer with Social Media Links */
 .social, p {
