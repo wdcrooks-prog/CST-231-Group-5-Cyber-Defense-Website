@@ -511,6 +511,7 @@ aside {
 /* Ch 11 lab3 Will Crooks Style rules for Skip to navigation Link */
 .skip-link {
     position: absolute;
+    left: -999px;
 }
 
 .skip-link:focus {
